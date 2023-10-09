@@ -1,10 +1,26 @@
 body {
-	background: rgb(245, 204, 132);
-	margin: 10;
-	padding: 20;
+	background: rgb(0, 0, 0);
+	margin: 100;
+	padding: 100;
+	max-width: 100%;
+	margin: auto;
+	color: beige;
+	text-align: center;
+
+
 	
 	font-size: 0.85em;
 	font-family: "Segoe UI", Verdana, Helvetica, sans-serif;
+
+}
+.tables {
+	.center 
+		margin-left: auto;
+		margin-right: auto;
+	  }
+
+.img-with-text {
+	font-size: xx-small;
 }
 
 
@@ -29,8 +45,58 @@ a:visited {
 }
 
 
+<!-- HTML !-->
+<button class="button-89" role="button">Button 89</button>
 
+/* CSS */
+.button-89 {
+  --b: 20px;
+  --s: 0.02em;
+  --color: #373B44;
+  
+  padding: calc(1em + var(--s)) calc(1.8em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
 
+  border: 0;
 
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
 
+.button-89:active {
+  background: var(--color);
+  color: hsla(0, 0%, 100%, 0.913);
+}
+
+.button {
+	background-color: hwb(122 30% 31%); /* Green */
+	border: 2px;
+	border-color: black;
+	color: white;
+	padding: 3% 4%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: fantasy;
+  }
+
+  .button:active {
+	background-color: darkgreen;
+  }
