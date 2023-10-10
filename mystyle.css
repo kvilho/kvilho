@@ -13,9 +13,14 @@ body {
 	font-family: "Segoe UI", Verdana, Helvetica, sans-serif;
 
 }
-.tables {
+.tables, th, td {
 		padding-bottom: 2%;
-		padding-left: 20%;
+		padding-left: 30%;
+		padding-right: 50%;
+		border-style: inherit;
+		border-color: beige;
+		border-width: 30px;
+		border: 1px 
 	  }
 	
 
@@ -86,7 +91,7 @@ a:visited {
 }
 
 .button {
-	background-color: hwb(122 20% 51%);
+	background-color: rgb(51, 125, 53);
 	border: 2px;
 	border-color: rgb(255, 255, 255);
 	color: white;
@@ -100,4 +105,56 @@ a:visited {
 
   .button:active {
 	background-color: rgb(1, 74, 1);
+  }
+
+  .kookoo {
+	background-color: rgb(255, 170, 0);
+	color: rgb(0, 0, 0);
+	text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1pxrgb(255, 255, 255)000, 1px 1px 0 #f2f0f0;
+	border: 2px;
+	border-color: rgb(255, 255, 255);
+	padding: 3% 4%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3vw;
+	font-family: fantasy;
+  }
+  .kpl {
+	background-color: rgb(255, 230, 0);
+	color: rgb(0, 0, 0);
+	padding: 3% 4%;
+	
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3vw;
+	font-family: fantasy;
+  }
+
+  .mypa {
+	background-color: rgb(255, 0, 0);
+	color: white;
+	padding: 3% 4%;
+	border: 2px;
+	border-color: rgb(255, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3vw;
+	font-family: fantasy;
+  }
+
+  .kouvot {
+	background-color: rgb(255, 255, 255);
+	border: 2px;
+	border-color: rgb(255, 255, 255);
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	padding: 3% 4%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3vw;
+	font-family: fantasy;
   }
