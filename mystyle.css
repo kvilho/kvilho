@@ -23,6 +23,10 @@ body {
 		border: 1px 
 	  }
 	
+.list {
+	padding-left: 30%;
+
+}	  
 
 .img-with-text {
 	font-size: xx-small;
@@ -158,3 +162,21 @@ a:visited {
 	font-size: 3vw;
 	font-family: fantasy;
   }
+  
+	.container {
+		padding-bottom: 50%;
+		position: relative;
+   }
+   
+   .container iframe {
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+   }
+
+   footer{
+	
+	font-size: x-small;
+   }
