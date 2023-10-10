@@ -1,7 +1,5 @@
 body {
 	background: rgb(0, 0, 0);
-	margin: 100;
-	padding: 100;
 	max-width: 100%;
 	margin: auto;
 	color: beige;
@@ -9,28 +7,25 @@ body {
 
 
 	
-	font-size: 0.85em;
+	font-size: 3.5vw;
 	font-family: "Segoe UI", Verdana, Helvetica, sans-serif;
 
 }
 .tables, th, td {
 		padding-bottom: 2%;
-		padding-left: 30%;
-		padding-right: 50%;
-		border-style: inherit;
+		padding-left: 15%;
+		padding-right: 15%;
 		border-color: beige;
-		border-width: 30px;
-		border: 1px 
+		margin-left:auto;
+		margin-right:auto;
 	  }
 	
 .list {
 	padding-left: 30%;
+	padding-right: 30%;
 
 }	  
 
-.kuvateksti {
-	font-size: xx-small;
-}
 
 
 
@@ -55,36 +50,36 @@ a:visited {
 
 
 
-.button:hover,
-.button:focus-visible{
-  --_p: 2px;
+.link_button:hover,
+.link_button:focus-visible{
+  color: rgb(240, 240, 113);
   background-color: rgb(1, 74, 1);
-  color: ;
   outline-offset: .55em;
 }
 
 
-.button {
+
+.link_button {
 	background-color: rgb(51, 125, 53);
-	border: 2px;
+	border: 2px solid rgb(255, 255, 255);
 	border-color: rgb(255, 255, 255);
-	color: white;
+	color: rgb(255, 255, 255);
 	padding: 3% 4%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 4vw;
+	font-size: 3vw;
 	font-family: fantasy;
   }
 
-  .button:active {
+  .link_button:active {
 	background-color: rgb(1, 74, 1);
+	color: rgb(151, 143, 0);
   }
 
   .kookoo {
 	background-color: rgb(255, 170, 0);
 	color: rgb(0, 0, 0);
-	text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1pxrgb(255, 255, 255)000, 1px 1px 0 #f2f0f0;
 	border: 2px;
 	border-color: rgb(255, 255, 255);
 	padding: 3% 4%;
@@ -93,7 +88,26 @@ a:visited {
 	display: inline-block;
 	font-size: 3vw;
 	font-family: fantasy;
+	animation-name: kookoo;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
   }
+
+  @keyframes kookoo {
+	from {
+	  color: rgb(0, 0, 0);
+	  background-color: rgb(255, 170, 0);
+	}
+	to {
+	  color: rgb(255, 170, 1);
+	  background-color: rgb(0, 0, 1);
+	}
+  }
+  
+	
+	
+  
   .kpl {
 	background-color: rgb(255, 230, 0);
 	color: rgb(0, 0, 0);
@@ -111,7 +125,7 @@ a:visited {
 	color: white;
 	padding: 3% 4%;
 	border: 2px;
-	border-color: rgb(255, 0, 0);
+	border-color: rgb(255, 0, 1);
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -119,8 +133,40 @@ a:visited {
 	font-family: fantasy;
   }
 
+  .sudet {
+	background-color: rgb(255, 0, 0);
+	color: white;
+	padding: 3% 4%;
+	border: 2px;
+	border-color: rgb(255, 0, 1);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3vw;
+	font-family: fantasy;
+	animation-name: joo;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+	
+	}
+@media screen and (max-width: 800px) {
+		.left, .main, .right {
+		  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		}
+  }
+  @keyframes joo {
+	from {color: rgb(255, 255, 255);}
+	to {color: rgb(0, 0, 0);}
+  }
+
+  
+
+
+  
   .kouvot {
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 254);
 	border: 2px;
 	border-color: rgb(255, 255, 255);
 	color: white;
@@ -134,20 +180,36 @@ a:visited {
   }
   
 	.container {
-		padding-bottom: 50%;
+		padding-bottom: 60%;
 		position: relative;
    }
    
    .container iframe {
 		height: 100%;
-		width: 100%;
+		width: 97%;
 		left: 0;
 		top: 0;
 		position: absolute;
    }
 
    footer{
-	font-family: 'Work Sans', sans-serif;
-	font-size: x-small;
-	position: 
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2vw;
+	padding-top: 10%;
    }
+
+
+  
+  @media screen and (max-width: 600px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.topnav.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  }
